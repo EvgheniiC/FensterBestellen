@@ -20,7 +20,7 @@ const changeModalState = (state) => { // нужно  5 эдементов т е 
                     case 'INPUT' :
                         if (item.getAttribute('type') === 'checkbox') {
                             i === 0 ? state[prop] = "calt" : state[prop] = "warm";
-                            elem.forEach((box, j) => {//только один checkbox можно вызвать
+                            elem.forEach((box, j) => {//только один checkbox можно нажимать
                                 box.checked = false;
                                 if (i == j) {
                                     box.checked = true;
