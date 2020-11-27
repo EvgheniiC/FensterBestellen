@@ -18,6 +18,20 @@ body {
   color: red;
 }
 
+.fadet{
+  animation-name: faded;
+  animation-duration: 1.5s;
+}
+/*от прозрачного к видного*/
+@keyframes faded{
+  from{
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
